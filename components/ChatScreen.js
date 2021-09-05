@@ -180,10 +180,8 @@ const InputContainer = styled.form`
 `;
 
 const Header = styled.div`
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     background-color: white;
     z-index: 3000;
     display: flex;
@@ -191,6 +189,12 @@ const Header = styled.div`
     height: 80px;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
+
+    @media (max-width: 768px) {
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
 `;
 
 const HeaderInformation = styled.div`
