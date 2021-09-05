@@ -166,6 +166,7 @@ const Input = styled.input`
     padding: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    font-size: 16px;
 `;
 
 const InputContainer = styled.form`
@@ -179,10 +180,12 @@ const InputContainer = styled.form`
 `;
 
 const Header = styled.div`
-    position: sticky;
-    background-color: white;
-    z-index: 100;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 3000;
     display: flex;
     padding: 11px;
     height: 80px;
@@ -208,6 +211,8 @@ const HeaderIcons = styled.div``;
 
 const MessageContainer = styled.div`
     padding: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: #e5ded8;
     min-height: 90vh;
 `;

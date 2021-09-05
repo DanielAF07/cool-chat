@@ -5,6 +5,7 @@ import Login from './login'
 import Loading from '../components/Loading'
 import { useEffect } from 'react'
 import firebase from 'firebase'
+import Sidebar from '../components/Sidebar'
 
 function MyApp({ Component, pageProps }) {
   const [user, loading] = useAuthState(auth)
